@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kartikey - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+body{
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: 'poppins', sans-serif;
+}
+nav{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(18,18,62);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    font-size: 1.05rem;
+    color: rgb(153, 153, 226);
+}
+main hr{
+    border: 0;
+    background: #9c97f1;
+    height: 1.2px;
+    margin: 60px 84px;
+}
+.left{
+    font-size: 1.7rem;
+}
+.firstsection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 130px 0;
+}
+.firstsection > div{
+    width: 30%;
+}
+.leftsection{
+    font-size: 3rem;
+     margin: 30px 0;
+}
+.leftsection .buttons{
+    padding: 23px;
+}
+.leftsection .btn{
+    padding: 12px;
+    background: #1e2167;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor:pointer;
+}
+.rightsection img{
+    width: 100%;
+    height: 400px;
+   
+}
+.text-purple{
+    color: rgb(194, 141, 245);
+}
+.text-gray{
+    color: rgb(246, 240, 240);
+}
+#element{
+    color: rgb(170,107, 228);
+}
+.secondsection{
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+}
+.secondsection h1{
+    font-size: 1.9rem;
+}
+.secondsection .box{
+    background: white;
+    width: 77vw;
+    height: 2px;
+    margin: 56px 0;
+    display: flex;
+}
+.secondsection .vertical{
+    background-color: white;
+    height: 93px;
+    width: 1px;
+    margin: 0 120px;
+}
+.image-top{
+    width: 50px;
+    position: relative;
+    top: -32px;
+    left: -9px;
+}
+.vertical-title{
+    position: relative;
+    top: 75px;
+    width: 150px;
+    font-size: 14px;
+
+}
+.vertical-desc{
+    position: relative;
+    top: 86px;
+    color: rgb(246, 240, 240);
+    width: 150px;
+    font-size: 11px;
+
+}
+footer{
+    background-color:rgb(9, 12, 43);
+    height: 125px;
+}
+.footer{
+display: flex;
+padding: 23px 0;
+justify-content: space-around;
+}
+.footer ul{
+    list-style: none;
+}
+.footer > div{
+    width: 223px;
+}
+footer .footer-rights{
+    text-align: center;
+    color: rgb(202, 236, 254);
+    padding: 12px 0;
+    cursor: pointer;
+    
+}
+@media screen and (max-width: 1400px){
+    body{
+    background-color: red;
+}
+.secondsection{
+    height: 141vh;
+}
+.box{
+    flex-direction: column;
+}
+.secondsection .vertical{
+    height: unset;
+}
+.vertical-title, .vertical-desc{
+    left: 45px;
+}
+.secondsection .box{
+    width: 50vw;
+}
+nav{
+    flex-direction: column;
+}
+.firstsection{
+    flex-direction: column-reverse;
+}
+.leftsection{
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.rightsection{
+    width: 721px !important;
+    display: flex;
+    justify-content: center;
+}
+.rightsection img{
+    width: 45vw;
+    margin-bottom: 73px;
+}
+.image-top{
+    top: 133px;
+}
+.secondsection{
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+body{
+    min-width: fit-content;
+}
+
+    </style>
+</head>
+<body>
+  <header>
+    <nav>
+        <div class="left">Kartikey's Portfolio</div>
+        <div class="right">
+            <ul>
+               <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Projects</a></li>
+                <li><a href="/">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+  </header>  
+  <main>
+    <section class="firstsection">
+        <div class="leftsection">
+           Hi,My name is <span class="text-purple">Kartikey</span> 
+        <div>and I am a Passionate</div>
+        <span id="element"></span>
+        <div class="buttons">
+            <button class="btn">Download Resume</button>
+            <button class="btn">Visit Github</button>
+        </div>
+        </div>
+        <div class="rightsection">
+        <img src="458fb93c-c899-48db-a2d0-283c1ae21e57.jpg" alt="">
+        </div>
+    </section>
+    <section class="secondsection">
+        <span class="text-gray">What I have done so far</span>
+    <h1>Virtual Internships and Bootcamps</h1>
+    <div class="box">
+        <div class="vertical">
+            <img class="image-top" src="Indian_Institute_of_Technology,_Indore_Logo.png" alt="">
+            <div class="vertical-title">
+                Web Developement IIT Indore Bootcamp
+            </div>
+            <span class="vertical-title">
+                    june(2023)
+                    </span>
+            <div class="vertical-desc">
+             It was a 10 days Web Developement Bootcamp at IIT Indore Campus in which i have Developed Skills in HTML,CSS and Javascript along with the Django Framework in the Backend Section. <br>
+             <button class="btn">Certificate</button>
+             </div>
+        </div>
+            <div class="vertical">
+                <img class="image-top" src="images.jpg" alt="">
+                <div class="vertical-title">
+                    Python development Codsoft internship
+                </div>
+                <span class="vertical-title">
+                    june(2024)
+                    </span>
+                <div class="vertical-desc">
+                   It was a 1 month virtual internship program in which i have developed skills in python programming and made Projects on random password generator,arithmetic calculator and rock,paper and scissor game.
+                    </div>
+            </div>
+            <div class="vertical">
+                <img class="image-top" src="images (1).jpg" alt="">
+                <div class="vertical-title">
+                 Oasis infobyte Frontend Designing
+                </div>
+                <span class="vertical-title">
+                    july(2024)
+                    </span>
+                <div class="vertical-desc">
+                   It is a 1 month virtual internship program in which I have developed skills in fronted web development and made hands on projects on a landing page,personal porfolio Website and a temperature converter Website.
+                    </div>
+            </div>
+            <div class="vertical">
+                <img class="image-top" src="images.png" alt="">
+                <div class="vertical-title">
+                    Robottron techfest, IIT Bombay
+                </div>
+                <span class="vertical-title">
+                    January(2020)
+                    </span>
+                <div class="vertical-desc">
+                   It was a National level Robottron Championship Organized by Abhyuday IIT bombay and our project was the Line Follower Robotic car.
+                    </div>
+            </div>
+            <div class="vertical">
+                <img class="image-top" src="5145df1033fa60f13b3b7125d2b69554.jpg" alt="">
+                <div class="vertical-title">
+                    C++ Learner
+                </div>
+                <span class="vertical-title">
+                    August-December(2023)
+                    </span>
+                <div class="vertical-desc">
+                   I was a C++ learner in 2023 my first year of college and i have learnt and developed practical skills in Basics C++,Data Structures and Object Oriented Programming.
+                    </div>
+            </div>
+        </div>
+    </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-first">
+    <h3>Kartikey's Developer Portfolio</h3>
+    </div>
+    <div class="footer-second">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Services</li>
+        </ul>
+    </div>
+    <div class="footer-rights" >
+        Copyright &#169; www.kartikeysportfolio.com !! All Rights Reserved
+    </div>
+  </footer>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Frontend Developer', 'Web Designer', 'Python Programmer','C++ Developer'],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+</html>
